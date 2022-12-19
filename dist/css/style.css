@@ -1,0 +1,359 @@
+@font-face {
+  font-family: Neucha;
+  font-display: swap;
+  src: url("../fonts/Neucha-Regular.woff2") format("woff2"), url("../fonts/Neucha-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  font-display: swap;
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button,
+input[type=submit] {
+  display: block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #172c48;
+}
+
+.container {
+  max-width: 76.125rem;
+  height: 100%;
+  padding: 0rem 0.9375rem;
+  margin: 0rem auto;
+}
+
+.btn-box {
+  position: relative;
+  width: 19.4375rem;
+  height: 4.375rem;
+  cursor: pointer;
+}
+.btn-box::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.4375rem;
+  left: 0rem;
+  width: inherit;
+  height: inherit;
+  background-color: #0C6DEE;
+  box-shadow: 0rem 0.0625rem 0.125rem rgba(123, 97, 255, 0.25);
+  border-radius: 2.1875rem;
+  z-index: 5;
+}
+.btn-box:hover::after {
+  transition: all 0.4s linear;
+  background-color: #ef7821;
+}
+.btn-box:active::after {
+  transition: all 0.1s linear;
+  background-color: #0C6DEE;
+}
+.btn-box:hover svg {
+  transition: all 0.4s linear;
+  fill: #ef7821;
+}
+.btn-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1.25rem;
+  left: 50%;
+  width: 16.25rem;
+  height: 3.125rem;
+  background: #0C6DEE;
+  opacity: 0.8;
+  filter: blur(1.0625rem);
+  border-radius: 4.5rem;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+.btn-box__send {
+  padding: 0 2.0625rem;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(174.82deg, #7bc0ff 4.38%, #2783fe 96.06%);
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 7.0625rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: #ffffff;
+  text-align: start;
+  position: relative;
+  z-index: 6;
+}
+.btn-box__send::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 2.0625rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: linear-gradient(174.82deg, #7bc0ff 4.38%, #2783fe 96.06%);
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 7.0625rem;
+  transform: translateY(-50%) rotate(180deg);
+  z-index: 7;
+}
+.btn-box__send:active {
+  color: #ef7821;
+}
+.btn-box__svg {
+  fill: #0C6DEE;
+  position: absolute;
+  z-index: 8;
+  top: 50%;
+  right: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.header {
+  color: #2783fe;
+  line-height: 130%;
+  padding: 1rem 0rem;
+}
+.header__logo {
+  width: 7.5625rem;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+}
+.header__logo img {
+  display: inline-block;
+}
+.header__select-box {
+  width: 5.9375rem;
+  height: 1.4375rem;
+  position: relative;
+}
+.header__select-box::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 0.3125rem;
+  transform: translateY(-75%) rotateZ(-45deg);
+  pointer-events: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-left: 0.125rem solid;
+  border-bottom: 0.125rem solid;
+}
+.header__select-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  pointer-events: none;
+  width: 1.5rem;
+  height: 0.8125rem;
+  background-image: url("../img/basic/en.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.header select {
+  width: inherit;
+  height: inherit;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 130%;
+  letter-spacing: 0.015em;
+  cursor: pointer;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  max-width: 37.5rem;
+  width: 100%;
+  margin: 0rem 0.625rem;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-item {
+  position: relative;
+}
+.header__menu-item:active {
+  color: #ef7821;
+}
+.header__menu-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.2rem;
+  left: 0rem;
+  width: 0;
+  height: 0.125rem;
+  background: #2783fe;
+}
+.header__menu-item:hover::before {
+  transition: width 0.5s linear;
+  width: 100%;
+}
+.header__menu-item:active::before {
+  background: #ef7821;
+}
+
+.welcome {
+  min-height: 790px;
+  background-image: url("../img/welcome/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
