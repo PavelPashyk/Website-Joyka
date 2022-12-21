@@ -170,6 +170,7 @@ body {
   height: 4.375rem;
   cursor: pointer;
 }
+
 .send-box::after {
   content: "";
   position: absolute;
@@ -183,6 +184,7 @@ body {
   border-radius: 2.1875rem;
   z-index: 5;
 }
+
 .send-box:hover::after {
   transition: all 0.4s linear;
   background-color: #ef7821;
@@ -214,6 +216,7 @@ body {
   transform: translateX(-50%);
   z-index: 4;
 }
+
 .send-box__btn {
   padding: 0 2.0625rem;
   width: inherit;
@@ -229,6 +232,7 @@ body {
   position: relative;
   z-index: 6;
 }
+
 .send-box__btn::after {
   content: "";
   position: absolute;
@@ -243,6 +247,7 @@ body {
   transform: translateY(-50%) rotate(180deg);
   z-index: 7;
 }
+
 .send-box__btn:active {
   color: #ef7821;
 }
