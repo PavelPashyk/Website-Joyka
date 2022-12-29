@@ -15,11 +15,21 @@
     /></a>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li class="header__menu-item">Как это работает?</li>
-        <li class="header__menu-item">Кто мы?</li>
-        <li class="header__menu-item">Поводы для отправки</li>
-        <li class="header__menu-item">FAQ</li>
-        <li class="header__menu-item">Отзывы</li>
+        <li class="header__menu-item">
+          <a href="#header-works">Как это работает?</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#header-about">Кто мы?</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#header-reason">Поводы для отправки</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#header-faq">FAQ</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#header-reviews">Отзывы</a>
+        </li>
       </ul>
     </nav>
     <div class="header__select-box">
@@ -30,7 +40,8 @@
     </div>
   </div>
 </header>
- <section class="welcome">
+ 
+    <section class="welcome">
   <div class="container">
     <div class="welcome__info">
       <h1 class="welcome__title">
@@ -61,11 +72,14 @@
         </div>
         <div class="welcome__play">
           <div class="play-box">
-            <button class="play-box__btn"></button>
+            <button
+              class="play-box__btn modal-open"
+              data-modal-open="modal-5"
+            ></button>
           </div>
           <div class="welcome__play-info">
             <p class="welcome__play-text">
-              Посмотрите видеообзор нашего подарка<br>
+              Посмотрите видеообзор нашего подарка<br />
               <span>Время просмотра 1:23 сек</span>
             </p>
           </div>
@@ -74,11 +88,37 @@
     </div>
     <img class="welcome__img" src="img/welcome/welcome-gerl.png" alt="gerl" />
   </div>
+  <div class="modal" data-modal="modal-5">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Bидеообзор нашего подарка</h4>
+          <div class="modal__text">
+            <video preload="metadata" controls class="modal__video">
+              <source src="../files/magic_moments.webm" type="video/webm" />
+              <source src="../files/magic_moments.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
     <section class="works">
   <div class="container">
-    <h2 class="title-block">Как это работает?</h2>
+    <h2 class="title-block" id="header-works">Как это работает?</h2>
     <div class="works__block">
       <div class="works__item item-left">
         <div class="works__block-img">
@@ -167,129 +207,128 @@
     <div class="wrapper-orange">
       <section class="reason">
   <div class="container">
-    <h2 class="title-block">Поводы для отправки</h2>
-  </div>
-  <div class="reason__slider-container">
-    <div class="reason__slider">
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_1.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Удивить родных</h4>
-          <p class="reason__text">
-            Встретились со знаменитостью? Веселитесь на концерте любимой группы?
-            Отдыхаете на экзотическом пляже? Такие фото обязательно должны быть
-            <span>в семейном альбоме!</span>
-          </p>
+    <h2 class="title-block" id="header-reason">Поводы для отправки</h2>
+    <div class="reason__carusel">
+      <div class="reason__carusel-container">
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_1.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Удивить родных</h4>
+            <p class="reason__text">
+              Встретились со знаменитостью? Веселитесь на концерте любимой
+              группы? Отдыхаете на экзотическом пляже? Такие фото обязательно
+              должны быть
+              <span>в семейном альбоме!</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_2.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Пригласить друзей на вечеринку</h4>
-          <p class="reason__text">
-            От приглашения, переданного <span>лично в руки</span>, настрой
-            хорошо повеселиться обеспечен
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_2.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Пригласить друзей на вечеринку</h4>
+            <p class="reason__text">
+              От приглашения, переданного <span>лично в руки</span>, настрой
+              хорошо повеселиться обеспечен
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_3.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Прислать привет из путешествия</h4>
-          <p class="reason__text">
-            <span>В любой точке мира</span> — вы рядом со своими близкими.
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_3.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Прислать привет из путешествия</h4>
+            <p class="reason__text">
+              <span>В любой точке мира</span> — вы рядом со своими близкими.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_4.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Подарить радость просто так!</h4>
-          <p class="reason__text">
-            Наша жизнь наполнена рутиной. Отправленная JoyKa с тёплыми словами
-            подарит вашим близким
-            <span>хорошее настроение и улыбку на весь день.</span>
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_4.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Подарить радость просто так!</h4>
+            <p class="reason__text">
+              Наша жизнь наполнена рутиной. Отправленная JoyKa с тёплыми словами
+              подарит вашим близким
+              <span>хорошее настроение и улыбку на весь день.</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_5.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Поделиться воспоминаниями</h4>
-          <p class="reason__text">
-            Фотография с фразой:
-            <span>«Помнишь, как классно было?»</span> вызовет волну
-            положительных эмоций и желание встретиться снова.
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_5.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Поделиться воспоминаниями</h4>
+            <p class="reason__text">
+              Фотография с фразой:
+              <span>«Помнишь, как классно было?»</span> вызовет волну
+              положительных эмоций и желание встретиться снова.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_6.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Передать привет родителям</h4>
-          <p class="reason__text">
-            Ваше счастливое фото порадует их больше любого звонка и напомнит
-            им о ваших чувствах.
-            <span>напомнит им о ваших чувствах.</span>
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_6.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Передать привет родителям</h4>
+            <p class="reason__text">
+              Ваше счастливое фото порадует их больше любого звонка и напомнит
+              им о ваших чувствах.
+              <span>напомнит им о ваших чувствах.</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_7.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Поздравить с праздником</h4>
-          <p class="reason__text">
-            <span>Удивить друзей, порадовать родных</span> — какая идея может
-            быть лучше для праздника, чем JoyKa?
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_7.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Поздравить с праздником</h4>
+            <p class="reason__text">
+              <span>Удивить друзей, порадовать родных</span> — какая идея может
+              быть лучше для праздника, чем JoyKa?
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reason__item">
-        <img
-          class="reason__img"
-          src="img/reason/reason-slide_8.jpg"
-          alt="photo"
-        />
-        <div class="reason__text-block">
-          <h4 class="reason__title">Вдохновить близких своими победами</h4>
-          <p class="reason__text">
-            Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa — пусть
-            друзья разделят с тобой
-            <span>радость момента.</span>
-          </p>
+        <div class="reason__carusel-item">
+          <img
+            class="reason__img"
+            src="img/reason/reason-slide_8.jpg"
+            alt="photo"
+          />
+          <div class="reason__text-block">
+            <h4 class="reason__title">Вдохновить близких своими победами</h4>
+            <p class="reason__text">
+              Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa —
+              пусть друзья разделят с тобой
+              <span>радость момента.</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
     <div class="reason__nav">
       <div class="reason__btn-block">
         <div class="button-box">
@@ -309,9 +348,10 @@
     </div>
   </div>
 </section>
- <section class="about">
+ 
+      <section class="about">
   <div class="container">
-    <h2 class="title-block">Кто мы?</h2>
+    <h2 class="title-block" id="header-about">Кто мы?</h2>
     <div class="about__list">
       <div class="about__item-box">
         <div class="about__item">
@@ -451,31 +491,55 @@
     <h2 class="title-block">Галерея</h2>
     <div class="gallery__slider">
       <div class="gallery__slider-block block-left">
-        <div class="gallery__block-top"></div>
+        <div class="gallery__block-top">
+          <img src="img/gallery/gallery-left_2.jpg" alt="picture" />
+        </div>
         <div class="gallery__block-down">
-          <div class="gallery__item item-first"></div>
-          <div class="gallery__item item-second"></div>
-          <div class="gallery__item item-third"></div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-left_1.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item img-active">
+            <img src="img/gallery/gallery-left_2.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-left_3.jpg" alt="picture" />
+          </div>
         </div>
         <h4 class="gallery__block-title">Graft JoyKa для Марии</h4>
       </div>
       <div class="gallery__slider-block block-middle">
-        <div class="gallery__block-top"></div>
+        <div class="gallery__block-top">
+          <img src="img/gallery/gallery-middle_2.jpg" alt="picture" />
+        </div>
         <div class="gallery__block-down">
-          <div class="gallery__item item-first"></div>
-          <div class="gallery__item item-second"></div>
-          <div class="gallery__item item-third"></div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-middle_1.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item img-active">
+            <img src="img/gallery/gallery-middle_2.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-middle_3.jpg" alt="picture" />
+          </div>
         </div>
         <h4 class="gallery__block-title">
           White JoyKa для поздравления матери
         </h4>
       </div>
       <div class="gallery__slider-block block-right">
-        <div class="gallery__block-top"></div>
+        <div class="gallery__block-top">
+          <img src="img/gallery/gallery-right_2.jpg" alt="picture" />
+        </div>
         <div class="gallery__block-down">
-          <div class="gallery__item item-first"></div>
-          <div class="gallery__item item-second"></div>
-          <div class="gallery__item item-third"></div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-right_1.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item img-active">
+            <img src="img/gallery/gallery-right_2.jpg" alt="picture" />
+          </div>
+          <div class="gallery__item">
+            <img src="img/gallery/gallery-right_3.jpg" alt="picture" />
+          </div>
         </div>
         <h4 class="gallery__block-title">Мягкая игрушка для милой девочки</h4>
       </div>
@@ -484,7 +548,10 @@
       <div class="gallery__block-video">
         <div class="gallery__video">
           <div class="play-box">
-            <button class="play-box__btn"></button>
+            <button
+              class="play-box__btn modal-open"
+              data-modal-open="modal-6"
+            ></button>
           </div>
         </div>
         <h4 class="gallery__block-title">Как сделать JoyKa</h4>
@@ -492,7 +559,10 @@
       <div class="gallery__block-video">
         <div class="gallery__video">
           <div class="play-box">
-            <button class="play-box__btn"></button>
+            <button
+              class="play-box__btn modal-open"
+              data-modal-open="modal-6"
+            ></button>
           </div>
         </div>
         <h4 class="gallery__block-title">Вручение JoyKa</h4>
@@ -516,8 +586,41 @@
       </svg>
     </div>
   </div>
+  <div class="modal" data-modal="modal-6">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Bидеообзор нашего подарка</h4>
+          <div class="modal__text">
+            <iframe
+              id="video-id"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TUGNzCEXmJQ?enablejsapi=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- <section class="connection">
+ 
+    <section class="connection">
   <div class="container">
     <div class="connection__box">
       <div class="connection__form-block">
@@ -579,7 +682,10 @@
           </div>
         </form>
         <p class="connection__form-approval">
-          Я принимаю условия <a href="#">передачи информации</a>
+          Я принимаю условия
+          <button class="modal-open" data-modal-open="modal-1">
+            передачи информации
+          </button>
         </p>
       </div>
       <div class="connection__info-block">
@@ -599,11 +705,41 @@
       </div>
     </div>
   </div>
+  <div class="modal" data-modal="modal-1">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Условия передачи информациию.</h4>
+          <div class="modal__text">
+            Lorem ipsum dolor sidi quiderit praesentium. Natus aliquid dolore
+            excepturi quae illo, odit nihil magnam ut vel perferendis! Eos
+            quaerat harum placeat debitis impedit, fugit modi error earum ab.
+            Fuga, eius atque nesciunt incidunt, sint illum aspernatur voluptatem
+            fugit tenetur, doloremque esse facere eos blanditiis. Quo nesciunt
+            itaque tempore sequi recusandae aut. Maiores ex architecto dolorem?
+            Non quidem accusantium, nesciunt consequuntur labore, debitis quas
+            vel iusto nam dolor molestias assumenda fugit nostrum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
     <section class="faq">
   <div class="container">
-    <h2 class="title-block">FAQ</h2>
+    <h2 class="title-block" id="header-faq">FAQ</h2>
     <div class="faq__accordion">
       <div class="faq__item">
         <div class="faq__item-header">Можно отправлять любое фото?</div>
@@ -615,12 +751,12 @@
           и красивой фотографии.
         </div>
       </div>
-      <div class="faq__item item-show">
-        <div class="faq__item-header">
+      <div class="faq__item">
+        <div class="faq__item-header item-show">
           Где мои близкие могут получить JoyKa?
         </div>
         <div class="faq__item-body">
-          Курьер JoyMail
+          Курьер JoyKa
           <span>доставит ваше послание по любому адресу</span> в черте
           указанного вами города. Перед доставкой мы обязательно уведомляем
           получаетля по СМС и звонком. Адресат может выбрать для себя более
@@ -687,25 +823,16 @@
     </div>
   </div>
 </section>
- <section class="reviews">
+ 
+    <section class="reviews">
   <div class="container">
-    <h2 class="title-block">Отзывы</h2>
+    <h2 class="title-block" id="header-reviews">Отзывы</h2>
     <div class="reviews__block">
       <div class="button-box">
         <button class="button-box__btn btn-prev"></button>
       </div>
-      <div class="reviews__item">
-        <div class="reviews__img"></div>
-        <div class="reviews__content">
-          <h4 class="reviews__title">Лера, отправила джойку для своей мамы</h4>
-          <p class="reviews__text">
-            Я заказала открытку для мамы в честь 8 марта! Думаю всем знакомо
-            как приятно, когда мама довольна и счастлива! Так вот благодаря
-            JoyMail моя мама была счастлива!Позвонила мне и я даже по телефону
-            прочувствовала её восторг! Спасибо JoyMail за такие эмоции!
-            Процветания твоим начинаниям!
-          </p>
-        </div>
+      <div class="reviews__carusel">
+        <div class="reviews__carusel-container"></div>
       </div>
       <div class="button-box">
         <button class="button-box__btn btn-next"></button>
@@ -715,7 +842,7 @@
       <p class="remark__text">Листайте дальше</p>
       <p class="remark__number">
         <span class="remark__number-now">01</span
-        ><span class="remark__number-all">/12</span>
+        ><span class="remark__number-all">/00</span>
       </p>
     </div>
   </div>
@@ -734,9 +861,19 @@
         </p>
       </div>
       <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a href="#">Политика безопасности</a></li>
-        <li class="footer__nav-item"><a href="#">Контакты</a></li>
-        <li class="footer__nav-item"><a href="#">Партнерам</a></li>
+        <li class="footer__nav-item">
+          <button class="modal-open" data-modal-open="modal-2">
+            Политика безопасности
+          </button>
+        </li>
+        <li class="footer__nav-item">
+          <button class="modal-open" data-modal-open="modal-3">Контакты</button>
+        </li>
+        <li class="footer__nav-item">
+          <button class="modal-open" data-modal-open="modal-4">
+            Партнерам
+          </button>
+        </li>
       </ul>
       <div class="footer__pay">
         <img
@@ -757,21 +894,164 @@
       </div>
     </div>
     <div class="footer__network-list">
-      <a class="footer__network-item" href="#"
-        ><img
-          src="img/basic/ico_instagram.png"
-          alt="instagram"
-          target="_blank"
+      <a
+        target="_blank"
+        class="footer__network-item"
+        href="https://www.linkedin.com/in/pavel-pashyk-960663248/"
+        ><img src="img/basic/ico_instagram.png" alt="instagram"
       /></a>
-      <a class="footer__network-item" href="#"
-        ><img src="img/basic/ico_facebook.png" alt="facebook" target="_blank"
+      <a
+        target="_blank"
+        class="footer__network-item"
+        href="https://www.linkedin.com/in/pavel-pashyk-960663248/"
+        ><img src="img/basic/ico_facebook.png" alt="facebook"
       /></a>
-      <a class="footer__network-item" href="#"
-        ><img src="img/basic/ico_telegram.png" alt="telegram" target="_blank"
+      <a
+        target="_blank"
+        class="footer__network-item"
+        href="https://www.linkedin.com/in/pavel-pashyk-960663248/"
+        ><img src="img/basic/ico_telegram.png" alt="telegram"
       /></a>
-      <a class="footer__network-item" href="#"
-        ><img src="img/basic/ico_youtube.png" alt="youtube" target="_blank"
+      <a
+        target="_blank"
+        class="footer__network-item"
+        href="https://www.linkedin.com/in/pavel-pashyk-960663248/"
+        ><img src="img/basic/ico_youtube.png" alt="youtube"
       /></a>
+    </div>
+  </div>
+  <div class="modal" data-modal="modal-2">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Политика безопасности.</h4>
+          <div class="modal__text">
+            <p>
+              Lorem ipsum dolor sidi quiderit praesentium. Natus aliquid dolore
+              excepturi quae illo, odit nihil magnam ut vel perferendis! Eos
+              quaerat harum placeat debitis impedit, fugit modi error earum ab.
+            </p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                maxime libero voluptas obcaecati minima voluptatibus ullam
+                exercitationem voluptate, quasi eaque.
+              </li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
+                repudiandae quas eaque aspernatur adipisci repellendus!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                itaque, beatae, mollitia ipsa, ab perferendis dolorem pariatur
+                inventore nesciunt quis quae dolores voluptatem! Architecto,
+                corrupti.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, placeat.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                beatae asperiores cupiditate tempore necessitatibus autem vitae
+                id.
+              </li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                nihil culpa sed repellendus quaerat.
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" data-modal="modal-3">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Контакты</h4>
+          <div class="modal__text">
+            <p>
+              Lorem ipsum dolor sidi quiderit praesentium. Natus aliquid dolore
+              excepturi quae illo, odit nihil magnam ut vel perferendis! Eos
+              quaerat harum placeat debitis impedit, fugit modi error earum ab.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91812.17994316034!2d27.523329137631812!3d53.88472079821034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e1!3m2!1sru!2sby!4v1672046203656!5m2!1sru!2sby"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" data-modal="modal-4">
+    <div class="modal__back">
+      <div class="modal__body">
+        <div class="modal__close">
+          <svg
+            viewBox="0 0 21 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.41 11L20.7 2.71C20.8638 2.5187 20.9494 2.27262 20.9397 2.02095C20.93 1.76927 20.8256 1.53053 20.6475 1.35244C20.4694 1.17434 20.2307 1.07001 19.979 1.06029C19.7274 1.05057 19.4813 1.13618 19.29 1.3L11 9.59L2.70997 1.29C2.52167 1.1017 2.26627 0.995911 1.99997 0.995911C1.73367 0.995911 1.47828 1.1017 1.28997 1.29C1.10167 1.47831 0.995881 1.7337 0.995881 2C0.995881 2.2663 1.10167 2.5217 1.28997 2.71L9.58997 11L1.28997 19.29C1.18529 19.3796 1.10027 19.49 1.04025 19.614C0.980225 19.7381 0.946494 19.8732 0.941175 20.0109C0.935855 20.1487 0.959061 20.286 1.00934 20.4143C1.05961 20.5427 1.13587 20.6592 1.23332 20.7567C1.33078 20.8541 1.44733 20.9304 1.57565 20.9806C1.70398 21.0309 1.84131 21.0541 1.97903 21.0488C2.11675 21.0435 2.25188 21.0098 2.37594 20.9497C2.50001 20.8897 2.61033 20.8047 2.69997 20.7L11 12.41L19.29 20.7C19.4813 20.8638 19.7274 20.9494 19.979 20.9397C20.2307 20.93 20.4694 20.8257 20.6475 20.6476C20.8256 20.4695 20.93 20.2307 20.9397 19.9791C20.9494 19.7274 20.8638 19.4813 20.7 19.29L12.41 11Z"
+            />
+          </svg>
+        </div>
+        <div class="modal__content">
+          <h4 class="modal__title">Ссылки на социальные сети</h4>
+          <div class="modal__text">
+            <div>
+              <p>Linkedin</p>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/pavel-pashyk-960663248/"
+                >https://www.linkedin.com/in/pavel-pashyk-960663248/</a
+              >
+            </div>
+            <div>
+              <p>GitHub</p>
+              <a target="_blank" href="https://github.com/PavelPashyk"
+                >https://github.com/PavelPashyk</a
+              >
+            </div>
+            <div>
+              <p>Telegram</p>
+              <a target="_blank" href="https://t.me/Pavel_Pashyk"
+                >https://t.me/Pavel_Pashyk</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
