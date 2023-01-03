@@ -15,3 +15,4 @@ The project website is located at https://joyka.netlify.app
 
 #### Project preview:
 
+![Project preview](./dist/img/basic/preview.png)
