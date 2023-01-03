@@ -162,7 +162,7 @@ fieldset {
   object-fit: cover;
 }
 
-.reviews__item::after, .reviews__item::before, .faq__item-header::before, .faq, .connection__content p::before, .connection__form-approval::before, .connection::after, .connection::before, .connection, .gallery__video, .gallery, .about__list::after, .about__list::before, .reason .container:first-child::before, .reason .container:first-child::after, .wrapper-orange::after, .wrapper-orange::before, .works__item-down::before, .works .item-right::after, .works .item-right::before, .works .item-middle::before, .works .item-left::before, .works__block-text::before, .welcome__info li::before, .welcome:before, .welcome, .header__select-box::before {
+.reviews__item::after, .reviews__item::before, .faq__item-header::before, .faq, .connection__content p::before, .connection__form-approval::before, .connection::after, .connection::before, .connection, .gallery__video, .gallery, .about__list::after, .about__list::before, .reason .container:first-child::before, .reason .container:first-child::after, .wrapper-orange::after, .wrapper-orange::before, .works__item-down::before, .works .item-right::after, .works .item-right::before, .works .item-middle::before, .works .item-left::before, .works__block-text::before, .welcome__info li::before, .welcome:before, .welcome {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -180,7 +180,7 @@ fieldset {
   justify-content: space-around;
 }
 
-.footer .modal[data-modal=modal-2] li::before, .reviews__item::after, .reviews__item::before, .faq__item-header::before, .connection__content p::before, .connection__content::before, .connection__form-approval::before, .connection__form-block::after, .connection::after, .connection::before, .about__item-box::after, .about__list::after, .about__list::before, .reason__carusel-item::after, .reason .container:first-child::before, .reason .container:first-child::after, .wrapper-orange::after, .wrapper-orange::before, .works__item-down .works__block-img::after, .works__item-down::before, .works .item-right::after, .works .item-right::before, .works .item-middle::before, .works .item-left::before, .works__block-text::before, .welcome__info li::before, .welcome:before, .header__menu-item a::before, .header__select-box::before, .header__select-box::after, .button-box__btn::before, .button-box::before, .button-box::after, .play-box__btn::after, .play-box__btn::before, .send-box__btn::after, .send-box::before, .send-box::after {
+.footer .modal[data-modal=modal-2] li::before, .reviews__item::after, .reviews__item::before, .faq__item-header::before, .connection__content p::before, .connection__content::before, .connection__form-approval::before, .connection__form-block::after, .connection::after, .connection::before, .about__item-box::after, .about__list::after, .about__list::before, .reason__carusel-item::after, .reason .container:first-child::before, .reason .container:first-child::after, .wrapper-orange::after, .wrapper-orange::before, .works__item-down .works__block-img::after, .works__item-down::before, .works .item-right::after, .works .item-right::before, .works .item-middle::before, .works .item-left::before, .works__block-text::before, .welcome__info li::before, .welcome:before, .header__menu-item a::before, .button-box__btn::before, .button-box::before, .button-box::after, .play-box__btn::after, .play-box__btn::before, .send-box__btn::after, .send-box::before, .send-box::after {
   content: "";
   position: absolute;
   display: block;
@@ -548,44 +548,6 @@ body.locked {
   align-items: center;
   display: flex;
   z-index: 51;
-}
-.header__select-box {
-  position: relative;
-  width: 5.9375rem;
-  height: 1.4375rem;
-  z-index: 51;
-}
-.header__select-box::after {
-  width: 0.625rem;
-  height: 0.625rem;
-  top: 50%;
-  right: 0.3125rem;
-  pointer-events: none;
-  border-left: 0.125rem solid;
-  border-bottom: 0.125rem solid;
-  transform: translateY(-75%) rotateZ(-45deg);
-}
-.header__select-box::before {
-  width: 1.5rem;
-  height: 0.8125rem;
-  top: 50%;
-  left: 50%;
-  pointer-events: none;
-  background-image: url("../img/basic/ru.png");
-  transform: translateY(-50%) translateX(-50%);
-}
-.header select {
-  width: inherit;
-  height: inherit;
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 130%;
-  letter-spacing: 0.015em;
-  cursor: pointer;
 }
 .header__nav {
   max-width: 37.5rem;
@@ -1519,6 +1481,7 @@ body.locked {
   margin-bottom: 1.875rem;
 }
 .footer__logo-block {
+  justify-content: start;
   width: 20.625rem;
 }
 .footer__logo-text {
@@ -1780,12 +1743,6 @@ body.locked {
   }
 }
 @media (max-width: 985px) {
-  .header__menu {
-    display: none;
-  }
-  .header .menu-burger {
-    display: flex;
-  }
   .welcome__img {
     max-width: 58rem;
     height: 35rem;
@@ -1872,6 +1829,12 @@ body.locked {
   }
   .title-block {
     font-size: 2.125rem;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header .menu-burger {
+    display: flex;
   }
   .welcome__info h1 {
     font-size: 2.25rem;
